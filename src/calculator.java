@@ -69,6 +69,8 @@ public  class calculator {
                 System.out.println("After year "+ counter_2+": "+ "Monthly income is: $" + String.format("%.2f",dividened_income));
                 System.out.println( "Total owed taxes after year " + counter_2 + ": $"+ String.format("%.2f",right_before_tax));
                 System.out.println("Total Capital including the dividends, pre-taxes: $" + String.format("%.2f",initial_investment));
+                System.out.println("Total Capital including the dividends and minus the taxes: $" + String.format("%.2f",(initial_investment-right_before_tax)));
+
 
 
             }
