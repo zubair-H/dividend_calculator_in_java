@@ -28,6 +28,7 @@ public  class calculator {
                        double each_month, double stock_price, double dividend_yield){
         this.number_of_months = number_of_months;
         this.initial_investment = initial_investment;
+        this.dividened_income = dividened_income;
         this.each_month = each_month;
         this.stock_price = stock_price; // Fixed the assignment of stock_price
         this.dividend_yield = dividend_yield;
@@ -57,10 +58,10 @@ public  class calculator {
 
             initial_investment = (initial_investment + each_month);
             dividened_income = ((initial_investment / stock_price) * dividend_yield);
-
+            right_before_tax += dividened_income;
             initial_investment += dividened_income;
             //right_before_dividends = (initial_investment + each_month)-dividened_income;
-            right_before_tax = dividened_income;
+
             if (counter % 12 == 0) {
                 right_before_tax = ((5.75 / 100.0) * right_before_tax); // Calculate the right_before_tax without modifying it
                 //System.out.println(right_before_tax + " this is working");

@@ -11,7 +11,7 @@ public class Main {
         calculator cal1 = new calculator(120, 40000, 2850, 36.68, 4.12);
 
         System.out.println(cal1.caculating());
-        System.out.println(cal1.quarterly_calculating());
+        //System.out.println(cal1.quarterly_calculating());
 
         //System.out.println(cal1.not_invested_capital);
 
